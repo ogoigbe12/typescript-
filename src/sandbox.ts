@@ -1,19 +1,13 @@
-//function
-let greet: Function
+// type aliases
+type StringorNum = string|Number
+type objwithNum = {name:string, uid: string|number}
 
-greet = () => {
-    console.log('hello,again');
+
+const longDetails = (uid: StringorNum, item: string)=>{
+    console.log(`${item} has a uid of ${uid}`)
 }
-greet()
 
-const add = (a: number, b: number, c: string|number = 10): void => {
-    console.log(a + b)
-    console.log(c);
+const greet = (user: objwithNum)=>{
+    console.log(`${user. name} says hi`);
     
-} 
-add(5, 24, '20')
-
-const minus = (a: number, b: number): number =>{
-    return a + b
 }
-let result = minus(10,24)
